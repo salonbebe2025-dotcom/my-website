@@ -113,3 +113,28 @@
 .profile-copy{container-type:inline-size;min-width:0}
 .profile-copy h2.profile-title{font-size:clamp(14px,5.2cqi,46px)}
 .profile-title>span{display:block;white-space:nowrap}
+
+/* Mobile reading rhythm: preserve explicit breaks while balancing wrapped lines. */
+@media(max-width:600px){
+  .section{padding:60px 20px}
+  .section h2{line-height:1.5;margin-bottom:24px;text-wrap:balance}
+  .hero{min-height:auto}
+  .hero-visual{height:420px}
+  .hero-copy{padding:48px 20px 32px}
+  .hero-lead,.intro>p:not(.section-kicker),.profile-copy>p,.support-card>p:not(.card-number),.menu-card>p,.menu-highlight>div>p:last-child,.value-grid p,.flow-list p,.pyramid-copy>p:last-child{font-size:14px;line-height:1.85;letter-spacing:.02em;text-wrap:pretty}
+  .hero-lead,.intro>p:not(.section-kicker),.value-grid p,.flow-list p{text-wrap:balance}
+  .value-grid{gap:24px}
+  .value-grid article{padding:24px 4px 12px}
+  .value-grid h3{line-height:1.5;margin:16px 0}
+  .value-grid p{margin:12px 0 0}
+  .flow-list{gap:16px}
+  .flow-list li{padding:24px 16px}
+  .flow-list p{margin-top:16px}
+  .support-card{padding:26px 20px}
+  .menu-card{padding:28px 20px}
+  .menu-card h3{line-height:1.5}
+  .note-box{padding:18px 16px;line-height:1.8;letter-spacing:.02em;text-wrap:pretty}
+  .profile{gap:40px}
+  .profile-copy h2.profile-title{font-size:clamp(14px,5.2cqi,46px);line-height:1.65}
+  .button-row{gap:16px}
+}
