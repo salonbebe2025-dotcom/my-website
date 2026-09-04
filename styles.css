@@ -98,3 +98,8 @@
 @media(max-width:600px){
   .contact-inner>img{width:132px;height:132px}
 }
+
+/* Keep the homepage headline on two lines at every screen width. */
+.hero-copy{container-type:inline-size}
+.hero h1.home-hero-title{font-size:clamp(16px,8.4cqi,64px)}
+.home-hero-title>span{display:block;white-space:nowrap}
