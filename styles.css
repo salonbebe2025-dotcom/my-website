@@ -103,3 +103,8 @@
 .hero-copy{container-type:inline-size}
 .hero h1.home-hero-title{font-size:clamp(16px,8.4cqi,64px)}
 .home-hero-title>span{display:block;white-space:nowrap}
+
+/* Align the first pair of support links along the bottom of their cards. */
+#support .support-card:nth-child(-n+2){display:flex;flex-direction:column;align-items:flex-start}
+#support .support-card:nth-child(-n+2)>ul{width:100%}
+#support .support-card:nth-child(-n+2)>a{margin-top:auto;padding-top:18px}
