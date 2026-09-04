@@ -108,3 +108,8 @@
 #support .support-card:nth-child(-n+2){display:flex;flex-direction:column;align-items:flex-start}
 #support .support-card:nth-child(-n+2)>ul{width:100%}
 #support .support-card:nth-child(-n+2)>a{margin-top:auto;padding-top:18px}
+
+/* Keep the profile heading on its two intended lines. */
+.profile-copy{container-type:inline-size;min-width:0}
+.profile-copy h2.profile-title{font-size:clamp(14px,5.2cqi,46px)}
+.profile-title>span{display:block;white-space:nowrap}
