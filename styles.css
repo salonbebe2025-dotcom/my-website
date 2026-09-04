@@ -54,7 +54,8 @@
 .intro>.baby-intro-copy{text-align:center}
 .section h2.single-line-heading{font-size:clamp(18px,3vw,40px);white-space:nowrap}
 .maternity-hero{background:#f7e7df}
-.maternity-hero h1{color:var(--peach-dark)}
+.maternity-hero>div:first-child{container-type:inline-size}
+.maternity-hero h1{color:var(--peach-dark);font-size:clamp(20px,12cqi,64px);white-space:nowrap}
 .intro>.maternity-intro-copy{text-align:center}
 .support-card ul{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;padding:0;columns:auto;list-style:none}
 .support-card ul li{display:flex;align-items:center;justify-content:center;min-height:42px;padding:8px;text-align:center;background:var(--cream);border-radius:10px;font-size:11px;line-height:1.45}
