@@ -202,3 +202,13 @@
   .first-visit-heading{gap:15px}
   .first-visit-heading>div h2{margin-bottom:0}
 }
+/* Fertility page requested line layout. */
+.concerns-one-line{white-space:nowrap}
+.fertility-body-copy span{white-space:nowrap}
+.plan-copy span{display:block}
+@media(max-width:600px){
+  .concerns-one-line{font-size:clamp(21px,6.2vw,27px)!important;letter-spacing:.02em}
+  .fertility-body-copy{font-size:14px!important;letter-spacing:0!important}
+  .note-box{max-width:none;margin-left:-2px;margin-right:-2px;padding-inline:12px}
+  .plan-copy{width:100%;max-width:none}
+}
