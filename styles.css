@@ -217,3 +217,14 @@
   .note-box{font-size:12.5px!important;letter-spacing:0}
 }
 .pyramid-copy>p.approach-copy{text-align:center}
+
+/* Maternity page fixed line layouts. */
+.fixed-lines>span{display:block;white-space:nowrap}
+.maternity-one-line{white-space:nowrap}
+@media(max-width:600px){
+  .intro>.maternity-intro-copy.intro-six{font-size:clamp(11px,3.25vw,13px);line-height:1.85;letter-spacing:0}
+  .maternity-note-four{font-size:clamp(9px,2.75vw,11px)!important;line-height:1.9;letter-spacing:0;padding-inline:10px}
+  .maternity-one-line{font-size:clamp(20px,6.1vw,27px)!important;letter-spacing:.01em}
+  .maternity-menu-copy,.maternity-message-copy{font-size:clamp(12px,3.45vw,14px)!important;letter-spacing:0!important}
+  .maternity-contact-copy{font-size:14px!important;letter-spacing:0!important}
+}
