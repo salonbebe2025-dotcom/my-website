@@ -138,3 +138,39 @@
   .profile-copy h2.profile-title{font-size:clamp(14px,5.2cqi,46px);line-height:1.65}
   .button-row{gap:16px}
 }
+/* Consistent typography and spacing across desktop and mobile. */
+:where(h1,h2,h3,p,li,dd){line-break:strict;word-break:normal;overflow-wrap:break-word}
+:where(h1,h2,h3){text-wrap:balance}
+:where(p){text-wrap:pretty}
+.section h2{line-height:1.45;margin:10px 0 26px}
+.intro>p:not(.section-kicker),.hero-lead,.profile-copy>p,.section-heading>p,.support-card>p:not(.card-number),.menu-card>p,.menu-highlight>div>p:last-child,.value-grid p,.flow-list p,.pyramid-copy>p:last-child,.mama-message>p:last-child{line-height:1.9;letter-spacing:.025em}
+.intro>p:not(.section-kicker),.maternity-intro-copy,.baby-intro-copy{max-width:760px;margin-left:auto;margin-right:auto}
+.value-grid article{display:flex;flex-direction:column;align-items:center}
+.value-grid h3{line-height:1.5;margin:18px 0 14px}
+.value-grid p{margin:0;max-width:34em}
+.flow-list li{display:flex;flex-direction:column}
+.flow-list p{margin-top:14px}
+.note-box{line-height:1.85;letter-spacing:.02em}
+
+@media(max-width:600px){
+  body{font-size:15px;line-height:1.9;letter-spacing:.02em}
+  .section{padding:58px 18px}
+  .section h2{font-size:clamp(25px,7.2vw,30px);line-height:1.45;margin:8px 0 22px}
+  .section-kicker,.eyebrow{margin-bottom:8px}
+  .hero-copy{padding:46px 20px 34px}
+  .hero-lead,.intro>p:not(.section-kicker),.profile-copy>p,.section-heading>p,.support-card>p:not(.card-number),.menu-card>p,.menu-highlight>div>p:last-child,.value-grid p,.flow-list p,.pyramid-copy>p:last-child,.mama-message>p:last-child{font-size:15px;line-height:1.9;letter-spacing:.015em}
+  .support-card{padding:28px 20px}
+  .support-card h3{line-height:1.5;margin:12px 0 16px}
+  .value-grid{gap:20px}
+  .value-grid article{padding:24px 0 14px}
+  .value-grid h3{margin:14px 0 12px}
+  .value-grid p{width:100%;max-width:22em}
+  .flow-list{gap:18px}
+  .flow-list li{padding:26px 18px}
+  .flow-list p{margin:14px 0 0}
+  .menu-highlight{padding:30px 20px;gap:22px}
+  .menu-highlight h2{margin-bottom:18px}
+  .menu-card{padding:28px 20px}
+  .note-box{margin-top:26px;padding:18px 16px;font-size:13px!important;line-height:1.85}
+  .contact-inner>p,.contact-note{line-height:1.85}
+}
