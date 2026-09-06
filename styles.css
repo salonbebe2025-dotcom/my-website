@@ -229,3 +229,8 @@
   .maternity-contact-copy{font-size:14px!important;letter-spacing:0!important}
 }
 .intro>.maternity-intro-copy.intro-six{text-align:center}
+
+/* Baby page fixed line composition */
+.baby-intro-copy,.baby-note-copy,.baby-menu-copy{text-align:center}
+.baby-section-title{white-space:nowrap}
+@media(max-width:720px){.baby-intro-copy,.baby-note-copy,.baby-menu-copy{font-size:clamp(12px,3.35vw,16px);line-height:1.9}.baby-section-title{font-size:clamp(21px,6vw,32px)}}
