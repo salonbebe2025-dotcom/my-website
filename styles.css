@@ -193,3 +193,12 @@
   .hero-lead{text-align:center}
 }
 .hero-lead br{display:block}
+
+/* Requested fixed lines and tighter first-visit spacing. */
+.credential b:nth-of-type(2){white-space:nowrap;font-size:clamp(14px,2vw,20px)}
+.first-visit-heading{gap:15px}
+.first-visit-heading>p{margin-block:0}
+@media(max-width:900px){
+  .first-visit-heading{gap:15px}
+  .first-visit-heading>div h2{margin-bottom:0}
+}
