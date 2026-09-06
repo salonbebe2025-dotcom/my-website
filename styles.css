@@ -183,3 +183,13 @@
 }
 .nowrap-line{white-space:nowrap}
 @media(max-width:600px){.section-heading .nowrap-line{font-size:clamp(13px,3.8vw,15px);letter-spacing:0}}
+
+/* Homepage header alignment and requested copy alignment. */
+.site-header{position:sticky}
+.site-header>.brand{align-self:flex-start;margin-left:2vw}
+.hero-lead{text-align:center}
+@media(max-width:900px){
+  .site-header>.brand{align-self:flex-start;margin-left:0}
+  .hero-lead{text-align:center}
+}
+.hero-lead br{display:block}
